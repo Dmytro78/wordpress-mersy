@@ -235,8 +235,6 @@ body{
   background-color: #181818;
   padding-bottom: 155px;
 }
-.block__head {
-}
 .dark .block__title {
   padding-top: 176px;
   color: #ffffff;
@@ -280,5 +278,4 @@ body{
   letter-spacing: 0.02em;
   color: #383838;
   margin: 0;
-  font-size: 26px;
 }

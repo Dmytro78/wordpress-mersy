@@ -71,6 +71,9 @@ body{
 .menu__item:last-child a{
   margin-right: 0;
 }
+.menu__mobile{
+  display: none;
+}
 .activ a{
   color: #010101;
 }
@@ -87,7 +90,8 @@ body{
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #1d1e1f;
-  margin: 207px auto 4px;
+  padding-top: 207px;
+  margin: 0 auto 4px;
 }
 .header__text {
   font-family: "Merriweather-LightItalic", serif;
@@ -232,8 +236,10 @@ body{
 /* --PROVIDE-- */
 
 .provide {
+  max-width: 1200px;
   background-color: #181818;
   padding-bottom: 155px;
+  margin: 0 auto;
 }
 .dark .block__title {
   padding-top: 176px;
@@ -389,4 +395,102 @@ input[type='number']{
   letter-spacing: 0.02em;
   color: #3b3b3b;
   margin-bottom: 29px;
+}
+/* -- MEDIA IPAD-- */
+@media screen and (max-width: 769px) {
+  .container{
+    width: 768px;
+  }
+  .about{
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 200px;
+  }
+  .about__inner{
+    grid-gap: 30px;
+    grid-template-columns: max-content;
+  }
+  .team .block__title,
+  .provide .block__title{
+    padding-top: 100px;
+  }
+  .provide__inner{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .provide__item{
+    max-width: 300px;
+    margin: 5px auto;
+  }
+  .contact__form{
+    padding-top: 70px;
+  }
+  .footer{
+    padding-top: 40px;
+  }
+}
+/* -- MEDIA IPhone X-- */
+@media screen and (max-width: 376px) {
+  .container{
+    width: 375px;
+  }
+  .logo{
+    margin: 0 -15px;
+  }
+  .menu__desktop{
+    display: none;
+  }
+  .menu__mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu{
+    display: none;
+  }
+  .menu__burger{
+    width: 40px;
+    height: 3px;
+    background-color: #000;
+    position: relative;
+  }
+  .menu__burger::after{
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    bottom: -10px;
+  }
+  .menu__burger::before{
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    top: -10px;
+  }
+  .header__title {
+    padding-top: 100px;
+    margin-bottom: 30px;
+  }
+  .header__button{
+    margin-bottom: 100px;
+  }
+  .about__item{
+    max-width: 336px;
+  }
+  .team{
+    height: auto;   
+  }
+  .team__inner{
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .team__item{
+    width: 340px;
+    padding-top: 20px;
+  }
 }
